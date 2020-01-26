@@ -60,7 +60,7 @@ steps:
       succeeded(),
       eq(variables['Build.Reason'], 'PullRequest'),
       eq(variables['System.PullRequest.TargetBranch'], 'master')
-    )Â 
+    ) 
 
 - task: DotNetCoreCLI@2
   displayName: 'Build the project - $(buildConfiguration)'
@@ -96,7 +96,7 @@ steps:
       succeeded(),
       eq(variables['Build.Reason'], 'PullRequest'),
       eq(variables['System.PullRequest.TargetBranch'], 'master')
-    )Â 
+    ) 
  
 - task: SonarCloudPublish@1
   displayName: 'Publish SonarCloud quality gate results'
@@ -106,7 +106,7 @@ steps:
       succeeded(),
       eq(variables['Build.Reason'], 'PullRequest'),
       eq(variables['System.PullRequest.TargetBranch'], 'master')
-    )Â 
+    ) 
 
 - task: PublishCodeCoverageResults@1
   displayName: 'Publish code coverage report'

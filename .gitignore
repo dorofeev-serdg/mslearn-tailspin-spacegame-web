@@ -31,6 +31,9 @@ bld/
 # Uncomment if you have tasks that create the project's static files in wwwroot
 #wwwroot/
 
+#CloudScanner
+.scannerwork/
+
 # Visual Studio 2017 auto generated files
 Generated\ Files/
 
@@ -137,6 +140,8 @@ _TeamCity*
 # Visual Studio code coverage results
 *.coverage
 *.coveragexml
+
+[Cc]ode[Cc]overage/
 
 # NCrunch
 _NCrunch_*
@@ -330,3 +335,6 @@ ASALocalRun/
 
 # MFractors (Xamarin productivity tool) working folder 
 .mfractor/
+
+# SonarQube
+.sonarqube/
